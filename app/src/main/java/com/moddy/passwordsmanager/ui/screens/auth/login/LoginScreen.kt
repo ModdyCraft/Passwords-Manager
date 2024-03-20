@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.moddy.passwordsmanager.R
+import com.moddy.passwordsmanager.ui.theme.Rounded8
 
 @Composable
 fun LoginScreen() {
@@ -31,12 +32,14 @@ fun LoginScreen() {
             value = "",
             onValueChange = {},
             modifier = Modifier.fillMaxWidth(),
+            shape = Rounded8
         )
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(
             value = "",
             onValueChange = {},
             modifier = Modifier.fillMaxWidth(),
+            shape = Rounded8
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
@@ -48,7 +51,8 @@ fun LoginScreen() {
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             modifier = Modifier.fillMaxWidth(),
-            onClick = { /*TODO*/ }
+            onClick = { /*TODO*/ },
+            shape = Rounded8
         ) {
             Text(text = stringResource(id = R.string.ls_login))
         }
@@ -56,7 +60,6 @@ fun LoginScreen() {
         Text(
             text = stringResource(id = R.string.ls_you_are_new),
             modifier = Modifier
-                .align(Alignment.Start)
                 .clickable { }
         )
     }
