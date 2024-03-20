@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Passwords Manager</string>
+
+    <!-- General -->
+    <string name="g_email">Email</string>
+    <string name="g_password">Password</string>
+    
+    <!-- Login Screen -->
+    <string name="ls_login">Login</string>
+    <string name="ls_forgot_your_password">Forgot your password?</string>
+    <string name="ls_you_are_new">You are new? create an account</string>
+    
 </resources>

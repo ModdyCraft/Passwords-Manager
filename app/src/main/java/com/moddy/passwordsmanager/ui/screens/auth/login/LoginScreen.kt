@@ -14,7 +14,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.moddy.passwordsmanager.R
 
 @Composable
 fun LoginScreen() {
@@ -38,24 +40,24 @@ fun LoginScreen() {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "A",
+            text = stringResource(id = R.string.ls_forgot_your_password),
             modifier = Modifier
                 .align(Alignment.Start)
-                .clickable {  }
+                .clickable { }
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = { /*TODO*/ }
         ) {
-            Text(text = "S")
+            Text(text = stringResource(id = R.string.ls_login))
         }
         Spacer(modifier = Modifier.height(32.dp))
         Text(
-            text = "S",
+            text = stringResource(id = R.string.ls_you_are_new),
             modifier = Modifier
                 .align(Alignment.Start)
-                .clickable {  }
+                .clickable { }
         )
     }
 }
