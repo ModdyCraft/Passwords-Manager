@@ -24,10 +24,11 @@ import com.moddy.passwordsmanager.ui.theme.Rounded8
 
 @Preview
 @Composable
-fun LoginScreen() {
+fun RegisterScreen() {
 
     val textEmail = remember { mutableStateOf("") }
     val textPassword = remember { mutableStateOf("") }
+    val textRepeatPassword = remember { mutableStateOf("") }
 
     Column(
         modifier = Modifier
@@ -60,11 +61,16 @@ fun LoginScreen() {
             }
         )
         Spacer(modifier = Modifier.height(16.dp))
-        Text(
-            text = stringResource(id = R.string.ls_forgot_your_password),
-            modifier = Modifier
-                .align(Alignment.Start)
-                .clickable { }
+        OutlinedTextField(
+            value = textRepeatPassword.value,
+            onValueChange = { newValue ->
+                textRepeatPassword.value = newValue
+            },
+            modifier = Modifier.fillMaxWidth(),
+            shape = Rounded8,
+            placeholder = {
+                Text("Confirm Password")
+            }
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
@@ -72,13 +78,14 @@ fun LoginScreen() {
             onClick = { /*TODO*/ },
             shape = Rounded8
         ) {
-            Text(text = stringResource(id = R.string.ls_login))
+            Text(text = stringResource(id = R.string.rs_register))
         }
         Spacer(modifier = Modifier.height(32.dp))
         Text(
-            text = stringResource(id = R.string.ls_you_are_new),
+            text = stringResource(id = R.string.rs_have_account_login),
             modifier = Modifier
                 .clickable { }
         )
+
     }
 }

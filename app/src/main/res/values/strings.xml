@@ -9,5 +9,9 @@
     <string name="ls_login">Login</string>
     <string name="ls_forgot_your_password">Forgot your password?</string>
     <string name="ls_you_are_new">You are new? create an account</string>
+
+    <!-- Register Screen -->
+    <string name="rs_register">Register</string>
+    <string name="rs_have_account_login">I have an account, Login</string>
     
 </resources>
