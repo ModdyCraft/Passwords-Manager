@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.moddy.passwordsmanager.R
-import com.moddy.passwordsmanager.ui.theme.Rounded8
+import com.moddy.passwordsmanager.ui.theme.StylesAndShapes
 
 @Composable
 fun SignupScreen() {
@@ -41,7 +41,7 @@ fun SignupScreen() {
                 textEmail.value = newValue
             },
             modifier = Modifier.fillMaxWidth(),
-            shape = Rounded8,
+            shape = StylesAndShapes.Shapes.Rounded8,
             placeholder = {
                 Text(stringResource(id = R.string.a_email))
             }
@@ -53,7 +53,7 @@ fun SignupScreen() {
                 textPassword.value = newValue
             },
             modifier = Modifier.fillMaxWidth(),
-            shape = Rounded8,
+            shape = StylesAndShapes.Shapes.Rounded8,
             placeholder = {
                 Text(stringResource(id = R.string.a_password))
             }
@@ -65,7 +65,7 @@ fun SignupScreen() {
                 textRepeatPassword.value = newValue
             },
             modifier = Modifier.fillMaxWidth(),
-            shape = Rounded8,
+            shape = StylesAndShapes.Shapes.Rounded8,
             placeholder = {
                 Text(stringResource(id = R.string.ss_confirm_password))
             }
@@ -74,15 +74,19 @@ fun SignupScreen() {
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = { /*TODO*/ },
-            shape = Rounded8
+            shape = StylesAndShapes.Shapes.Rounded8
         ) {
-            Text(text = stringResource(id = R.string.ss_signup))
+            Text(
+                text = stringResource(id = R.string.ss_signup),
+                style = StylesAndShapes.Styles.BtFont
+            )
         }
         Spacer(modifier = Modifier.height(32.dp))
         Text(
             text = stringResource(id = R.string.ss_have_account_login),
             modifier = Modifier
-                .clickable { }
+                .clickable { },
+            style = StylesAndShapes.Styles.TextLink
         )
 
     }

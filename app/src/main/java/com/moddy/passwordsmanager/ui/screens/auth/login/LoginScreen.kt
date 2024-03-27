@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.moddy.passwordsmanager.R
-import com.moddy.passwordsmanager.ui.theme.Rounded8
+import com.moddy.passwordsmanager.ui.theme.StylesAndShapes
 
 @Composable
 fun LoginScreen() {
@@ -40,7 +40,7 @@ fun LoginScreen() {
                 textEmail.value = newValue
             },
             modifier = Modifier.fillMaxWidth(),
-            shape = Rounded8,
+            shape = StylesAndShapes.Shapes.Rounded8,
             placeholder = {
                 Text(stringResource(id = R.string.a_email))
             }
@@ -52,7 +52,7 @@ fun LoginScreen() {
                 textPassword.value = newValue
             },
             modifier = Modifier.fillMaxWidth(),
-            shape = Rounded8,
+            shape = StylesAndShapes.Shapes.Rounded8,
             placeholder = {
                 Text(stringResource(id = R.string.a_password))
             }
@@ -62,21 +62,26 @@ fun LoginScreen() {
             text = stringResource(id = R.string.ls_forgot_your_password),
             modifier = Modifier
                 .align(Alignment.Start)
-                .clickable { }
+                .clickable { },
+            style = StylesAndShapes.Styles.TextLink
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = { /*TODO*/ },
-            shape = Rounded8
+            shape = StylesAndShapes.Shapes.Rounded8
         ) {
-            Text(text = stringResource(id = R.string.ls_login))
+            Text(
+                text = stringResource(id = R.string.ls_login),
+                style = StylesAndShapes.Styles.BtFont
+            )
         }
         Spacer(modifier = Modifier.height(32.dp))
         Text(
             text = stringResource(id = R.string.ls_you_are_new),
             modifier = Modifier
-                .clickable { }
+                .clickable { },
+            style = StylesAndShapes.Styles.TextLink
         )
     }
 }
