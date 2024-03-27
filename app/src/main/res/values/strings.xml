@@ -10,9 +10,9 @@
     <string name="ls_forgot_your_password">Forgot your password?</string>
     <string name="ls_you_are_new">You are new? create an account</string>
 
-    <!-- Register Screen -->
-    <string name="rs_register">Register</string>
-    <string name="rs_have_account_login">I have an account, Login</string>
-    <string name="rs_confirm_password">Confirm password</string>
+    <!-- Signup Screen -->
+    <string name="ss_signup">Signup</string>
+    <string name="ss_have_account_login">I have an account, Login</string>
+    <string name="ss_confirm_password">Confirm password</string>
     
 </resources>

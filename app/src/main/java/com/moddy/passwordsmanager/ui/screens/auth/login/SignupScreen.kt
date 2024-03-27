@@ -17,14 +17,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.moddy.passwordsmanager.R
 import com.moddy.passwordsmanager.ui.theme.Rounded8
 
-@Preview
 @Composable
-fun RegisterScreen() {
+fun SignupScreen() {
 
     val textEmail = remember { mutableStateOf("") }
     val textPassword = remember { mutableStateOf("") }
@@ -69,7 +67,7 @@ fun RegisterScreen() {
             modifier = Modifier.fillMaxWidth(),
             shape = Rounded8,
             placeholder = {
-                Text(stringResource(id = R.string.rs_confirm_password))
+                Text(stringResource(id = R.string.ss_confirm_password))
             }
         )
         Spacer(modifier = Modifier.height(16.dp))
@@ -78,11 +76,11 @@ fun RegisterScreen() {
             onClick = { /*TODO*/ },
             shape = Rounded8
         ) {
-            Text(text = stringResource(id = R.string.rs_register))
+            Text(text = stringResource(id = R.string.ss_signup))
         }
         Spacer(modifier = Modifier.height(32.dp))
         Text(
-            text = stringResource(id = R.string.rs_have_account_login),
+            text = stringResource(id = R.string.ss_have_account_login),
             modifier = Modifier
                 .clickable { }
         )
