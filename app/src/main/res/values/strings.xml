@@ -14,5 +14,8 @@
     <string name="ss_signup">Signup</string>
     <string name="ss_have_account_login">I have an account, Login</string>
     <string name="ss_confirm_password">Confirm password</string>
+
+    <!-- Home -->
+    <string name="h_search">Search</string>
     
 </resources>
