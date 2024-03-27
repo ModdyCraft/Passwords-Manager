@@ -44,7 +44,7 @@ fun LoginScreen() {
             modifier = Modifier.fillMaxWidth(),
             shape = Rounded8,
             placeholder = {
-                Text("Email")
+                Text(stringResource(id = R.string.a_email))
             }
         )
         Spacer(modifier = Modifier.height(16.dp))
@@ -56,7 +56,7 @@ fun LoginScreen() {
             modifier = Modifier.fillMaxWidth(),
             shape = Rounded8,
             placeholder = {
-                Text("Password")
+                Text(stringResource(id = R.string.a_password))
             }
         )
         Spacer(modifier = Modifier.height(16.dp))

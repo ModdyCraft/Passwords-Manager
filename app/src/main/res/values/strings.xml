@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Passwords Manager</string>
 
-    <!-- General -->
-    <string name="g_email">Email</string>
-    <string name="g_password">Password</string>
+    <!-- Auth -->
+    <string name="a_email">Email</string>
+    <string name="a_password">Password</string>
     
     <!-- Login Screen -->
     <string name="ls_login">Login</string>
@@ -13,5 +13,6 @@
     <!-- Register Screen -->
     <string name="rs_register">Register</string>
     <string name="rs_have_account_login">I have an account, Login</string>
+    <string name="rs_confirm_password">Confirm password</string>
     
 </resources>
