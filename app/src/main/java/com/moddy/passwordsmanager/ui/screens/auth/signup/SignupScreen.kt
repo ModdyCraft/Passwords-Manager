@@ -1,4 +1,4 @@
-package com.moddy.passwordsmanager.ui.screens.auth.login
+package com.moddy.passwordsmanager.ui.screens.auth.signup
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -92,6 +92,5 @@ fun SignupScreen(
                 },
             style = StylesAndShapes.Styles.TextLink
         )
-
     }
 }

@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.moddy.passwordsmanager.ui.screens.auth.login.LoginScreen
-import com.moddy.passwordsmanager.ui.screens.auth.login.SignupScreen
+import com.moddy.passwordsmanager.ui.screens.auth.signup.SignupScreen
 
 @Composable
 fun NavController(
