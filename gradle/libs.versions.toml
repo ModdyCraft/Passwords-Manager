@@ -9,6 +9,8 @@ lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2023.08.00"
 navVersion = "2.7.7"
+roomVersion = "2.6.1"
+ksp = "1.9.21-1.0.15"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,8 +28,11 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navVersion" }
+androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+devToolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

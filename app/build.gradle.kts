@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.devToolsKsp)
 }
 
 android {
@@ -67,5 +68,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // Navigation compose
     implementation(libs.androidx.compose.navigation)
+
+    // Room Database
+    implementation(libs.androidx.room)
+    annotationProcessor(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 }
