@@ -41,7 +41,7 @@ fun LoginScreen() {
             },
             modifier = Modifier.fillMaxWidth(),
             shape = StylesAndShapes.Shapes.Rounded8,
-            placeholder = {
+            label = {
                 Text(stringResource(id = R.string.a_email))
             }
         )
@@ -53,7 +53,7 @@ fun LoginScreen() {
             },
             modifier = Modifier.fillMaxWidth(),
             shape = StylesAndShapes.Shapes.Rounded8,
-            placeholder = {
+            label = {
                 Text(stringResource(id = R.string.a_password))
             }
         )
