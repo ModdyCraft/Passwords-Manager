@@ -22,7 +22,9 @@ import com.moddy.passwordsmanager.R
 import com.moddy.passwordsmanager.ui.theme.StylesAndShapes
 
 @Composable
-fun SignupScreen() {
+fun SignupScreen(
+    navToLogin: () -> Unit
+) {
 
     val textEmail = remember { mutableStateOf("") }
     val textPassword = remember { mutableStateOf("") }
@@ -85,7 +87,9 @@ fun SignupScreen() {
         Text(
             text = stringResource(id = R.string.ss_have_account_login),
             modifier = Modifier
-                .clickable { },
+                .clickable {
+                    navToLogin()
+                },
             style = StylesAndShapes.Styles.TextLink
         )
 

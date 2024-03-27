@@ -17,10 +17,33 @@ fun NavController(
         startDestination = NavRoutes.Login.name
     ) {
         composable(route = NavRoutes.Login.name) {
-            LoginScreen()
+            LoginScreen(
+                navToForgotPassword = {
+
+                },
+                navToSignup = {
+                    navController.navigate(NavRoutes.Signup.name) {
+                        popUpTo(NavRoutes.Login.name) {
+                            inclusive = true
+                        }
+
+                        launchSingleTop = true
+                    }
+                }
+            )
         }
         composable(route = NavRoutes.Signup.name) {
-            SignupScreen()
+            SignupScreen(
+                navToLogin = {
+                    navController.navigate(NavRoutes.Login.name) {
+                        popUpTo(NavRoutes.Signup.name) {
+                            inclusive = true
+                        }
+
+                        launchSingleTop = true
+                    }
+                }
+            )
         }
     }
 }
