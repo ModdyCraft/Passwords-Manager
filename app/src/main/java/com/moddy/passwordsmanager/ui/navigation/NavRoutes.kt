@@ -7,5 +7,6 @@ enum class NavRoutes(
     @StringRes title: Int
 ) {
     Login(R.string.ls_login),
-    Signup(R.string.ss_signup)
+    Signup(R.string.ss_signup),
+    Home(R.string.hs_home)
 }

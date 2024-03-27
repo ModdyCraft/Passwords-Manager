@@ -17,5 +17,8 @@
 
     <!-- Home -->
     <string name="h_search">Search</string>
-    
+
+    <!-- Home Screen -->
+    <string name="hs_home">Home</string>
+
 </resources>
