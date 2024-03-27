@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.devToolsKsp)
+    alias(libs.plugins.daggerHilt)
 }
 
 android {
@@ -76,4 +77,8 @@ dependencies {
     annotationProcessor(libs.androidx.room.compiler)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
+
+    // Dagger Hilt
+    implementation(libs.google.dagger.hilt)
+    ksp(libs.google.dagger.hilt.compiler)
 }
